@@ -1,5 +1,5 @@
-# oah-dev-vm
-OAH Environment used for developing oah
+# oah-kob-vm
+OAH VM for KOB
 
 # This is to be used only if you do not have oah shell installed.
 
