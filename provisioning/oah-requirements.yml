@@ -1,0 +1,25 @@
+---
+- src: https://github.com/openapphack/ansible-role-oah
+  version: master
+  name: oah.oah
+- src: https://github.com/openapphack/ansible-role-oah-shell
+  version: master
+  name: oah.shell
+- src: https://github.com/openapphack/ansible-role-oah-users
+  version: master
+  name: oah.users
+- src: https://github.com/openapphack/ansible-role-oah-usage
+  version: master
+  name: oah.usage
+- src: https://github.com/openapphack/ansible-role-oah-projects
+  version: master
+  name: oah.projects
+- src: https://github.com/openapphack/ansible-role-oah-git
+  version: master
+  name: oah.git
+- src: https://github.com/openapphack/ansible-role-oah-desktop
+  version: master
+  name: oah.desktop
+- src: https://github.com/openapphack/ansible-role-oah-atom
+  version: master
+  name: oah.atom

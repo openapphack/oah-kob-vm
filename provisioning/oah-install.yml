@@ -1,0 +1,28 @@
+---
+- hosts: all
+  sudo: True
+  vars:
+  - oah_command: install
+
+  vars_files:
+    - ../oah-config.yml
+
+  pre_tasks:
+    - name: "printing debug msg"
+      debug:
+        msg: In pre_tasks
+    # Will need the shell provision to install python-minimal first
+    - name: Install python for Ansible
+      raw: test -e /usr/bin/python || (sudo apt -y update && apt install -y python-minimal)
+    - include: tasks/init-debian.yml
+      when: ansible_os_family == 'Debian'
+  roles:
+    # Essential roles.
+    - oah.oah
+    - oah.desktop
+    - oah.atom
+
+
+    # Conditionally-installed roles.
+
+    # Roles for security and stability on production.
