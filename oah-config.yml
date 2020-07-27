@@ -1,6 +1,6 @@
 ---
 # environment Name
-oah_env_name: oah-dev-vm
+oah_env_name: oah-kob-vm
 #GUI Flag
 oah_vm_gui: true
 # `vagrant_box` .
@@ -13,8 +13,8 @@ oah_user: oahdev
 
 # If you need to run multiple instances of Openhack VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: oah-dev-vm.dev
-vagrant_machine_name: oah-dev-vm
+vagrant_hostname: oah-kob-vm.dev
+vagrant_machine_name: oah-kob-vm
 #vagrant_ip: 192.168.88.88
 vagrant_ip: 0.0.0.0
 
